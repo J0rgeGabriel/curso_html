@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1. maximum-scale=1.0">
+    <title>Meu HTML</title>
+
+    <!-- style se refere a CSS -->
+    <style>
+        h1 {
+            background: red;
+        }
+
+        p {
+            background: rgb(82, 82, 209);
+        }
+
+        i {
+            color: hotpink;
+        }
+
+        /* para especificar por um id, basta usar [#] + o nome do [id] */
+        #cabecalho_02 {
+            background: purple;
+        }
+
+        /* para especificar por uma class, basta usar [.] + o nome da [class] */
+        .fundo_vermelho {
+            background: green;
+        }
+
+        .bold {
+            color: rgb(0, 251, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- [id] sempre terá prioridade sobre [class] -->
+    <h1 id="cabecalho_01" class="fundo_vermelho + borda_vermelha">
+        Titulo
+    </h1>
+
+    <h1 id="cabecalho_02" class="fundo_vermelho">
+        Titulo
+    </h1>
+
+    <!-- <b>...</b>: negrito -->
+    <!-- <i>...</i>: italico -->
+    <p>
+        Um <i>texto</i> <b class="bold">qualquer</b>
+    </p>
+</body>
+
+</html>
